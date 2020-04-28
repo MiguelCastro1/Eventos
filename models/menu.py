@@ -9,11 +9,11 @@ response.menu = [
     (T('Home'), False, URL('evento','default', 'home'), []),
     (T('Procurar Tags'), False, URL('evento','default', 'procura_tags'), []),
     (T('Meus Eventos'), False, URL('evento','default', 'meus_eventos'), []),
-    (T('Criar Evento'), False, URL('evento','default', 'cadastro_evento'), []),
+    (T('Criar Evento'), False, URL('evento','organizacao', 'cadastro_evento'), []),
     (T('Meus Perfil'), False, URL(), [
         (T('Usuario'), False, URL('evento','default', 'user',args=['profile']), []),
-   		(T('Cliete'), False, URL('evento','default', 'cliente'), []),
-   		(T('Organizacao'), False, URL('evento','default', 'organizacao'), [])
+   		(T('Cliete'), False, URL('evento','usuario', 'cliente'), []),
+   		(T('Organizacao'), False, URL('evento','organizacao', 'organizacao'), [])
     	]),
 
     

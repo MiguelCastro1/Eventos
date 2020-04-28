@@ -1,4 +1,4 @@
-#Definicao do schema
+#Definicao do schema Relacional
 
 db.define_table("Cliente",
 			    Field("usu_id","reference auth_user",unique=True,notnull=True,label= "Usuario"),
@@ -79,6 +79,7 @@ db.define_table("Tag_Evento",
 				Field("eve_id","reference Evento",notnull=True,label="Evento"),
 				Field("tag","string",notnull=True,length = 30,label="Tag")
 				)
+				
 db.commit()
 auth.enable_record_versioning(db)
 

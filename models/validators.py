@@ -1,4 +1,4 @@
-#validacoes
+#validacoes sobre as Tabelas
 
 db.Cliente.usu_id.requires = [IS_IN_DB(db,"auth_user.id"),IS_NOT_IN_DB(db,"Cliente.id")]
 db.Cliente.nascimento.requires = IS_NOT_EMPTY()
